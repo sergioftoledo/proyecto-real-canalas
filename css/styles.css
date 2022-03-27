@@ -11,6 +11,30 @@ body {
     background-color: #F3E4D5;
 }
 
+h1 {
+    font-size: 99px;
+    font-family: "Playfair Display", serif;
+}
+
+h2 {
+    font-size: 62px;
+    font-family: "Playfair Display", serif;
+}
+
+h3 {
+    font-size: 49px;
+    color: #ed6d61;
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    font-size: 30px;
+    color: #357ba7;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+
 header {
     width: 100%;
     position: fixed;
@@ -276,3 +300,104 @@ button {
     cursor: pointer;
     margin: 20px 0;
 }
+
+/*Inicio de Página Universo Canalas*/
+
+.universo-canales-main {
+    background-image: url("../imagenes/universo-canalas/universo-canalas.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .descripcion-canalas-contenedor {
+    width: 55%;
+    margin: auto;
+    margin-top: 118px;
+    margin-bottom: 450px;
+  }
+  .descripcion-canalas-contenedor h1 {
+    font-size: 49px;
+    color: #ed6d61;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 68px;
+  }
+  .descripcion-canalas-contenedor h1, .descripcion-canalas-contenedor p {
+    text-align: center;
+  }
+  
+  .historia-contenedor {
+    width: 55%;
+    margin: auto;
+    padding-bottom: 131px;
+  }
+  .historia-contenedor h1,h2 {
+    font-size: 49px;
+    color: #ed6d61;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 68px;
+  }
+  .historia-contenedor h1, h2, .historia-contenedor p {
+    text-align: center;
+  }
+
+
+
+/*Fin de Página Universo Canalas*/
+
+
+
+
+
+/*Inicio del Footer*/
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3E4D5;
+}
+footer .ig-image{
+    margin-top: 100px;
+    margin-bottom: 32px;
+}
+footer h3{
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #754D2B;
+}
+hr{
+   width: 50%;
+   height: 5px;
+   background-color: #ed6d61;
+   border: none;
+   border-radius: 50px;
+   
+}
+footer .footer-contenedor-contenido{
+    padding-bottom: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #F3E4D5;
+    
+
+}
+footer .contenedor-datos-contacto{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 10px; 
+}
+
+footer .footer-contenedor-contenido p{
+    color: #754D2B;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 400;
+    
+}
+
+/*Fin del Footer*/
