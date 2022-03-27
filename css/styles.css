@@ -7,8 +7,10 @@
     margin: 0;
 }
 
+/* Pagina inicio */
+
 body {
-    background-color: #F3E4D5;
+    background-color: #fff;
 }
 
 h1 {
@@ -36,6 +38,8 @@ p {
 
 
 header {
+    top: 0;
+    left: 0;
     width: 100%;
     position: fixed;
     background-color: #F3E4D5;
@@ -132,7 +136,7 @@ button {
 
 /* Seccion 2 */
 .seccion-2 {
-    background-image: url("./../imagenes/seccion-2/group.jpg");
+    background-image: url(./../imagenes/seccion-2/fondo-seccion-2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,7 +151,7 @@ button {
     font-size: 2rem;
     color: #754D2B;
     font-weight: 500;
-    margin: 70px 0;
+    padding: 70px 0;
 }
 
 .contenedor-tarjeta {
@@ -214,11 +218,10 @@ button {
 .saber-mas {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    text-transform: uppercase;
     font-size: 2rem;
     color: #754D2B;
     font-weight: 500;
-    margin-top: 215px;
+    margin-top: 140px;
 }
 
 
@@ -259,8 +262,13 @@ button {
     padding: 50px 0;   
 }
 
-.preguntas-frecuentes span {
+.visita-nuestra-seccion {
     color: #754D2B;
+    font-size: 1.3rem;
+}
+
+.visita-nuestra-seccion a {
+    color: #357BA7;
 }
 
 /* Seccion 4 */
@@ -301,10 +309,12 @@ button {
     margin: 20px 0;
 }
 
+/* Fin pagina inicio */
+
 /*Inicio de Página Universo Canalas*/
 
 .universo-canales-main {
-    background-image: url("../imagenes/universo-canalas/universo-canalas.png");
+    background-image: url(../imagenes/universo-canalas/universo-canalas.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
