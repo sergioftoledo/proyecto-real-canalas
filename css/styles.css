@@ -16,6 +16,7 @@ body {
 h1 {
     font-size: 99px;
     font-family: "Playfair Display", serif;
+    color: #ed6d61;
 }
 
 h2 {
@@ -357,6 +358,159 @@ button {
 
 
 
+/*Inicio Página Cómo Comprar*/
+.como-comprar-main{
+    background-image: url('../imagenes/como-comprar/fondo.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 110px;
+}
+
+.como-comprar-main h1{
+    font-size: 49px;
+    
+
+}
+
+.pasos-comprar-contanedor{
+    display: grid;
+    grid-template-columns: (78px auto);
+    grid-auto-rows: 117px;
+    column-gap: 27px;
+    width: 40%;
+    margin-top: 61px;
+    margin-bottom: 60px;
+
+}
+.pasos-mini-contenedor-img{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.pasos-mini-contenedor-texto{
+    display: flex; 
+    align-items: center;
+}
+
+.img-container-1{
+    grid-area: img1;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.img-container-2{
+    grid-area: img2; 
+    grid-column: 1/2;
+    grid-row: 2/3 ;   
+}
+
+.img-container-3{
+    grid-area: img3;
+    grid-column: 1/2;
+    grid-row: 3/4;    
+}
+
+.img-container-4{
+    grid-area: img4; 
+    grid-column: 1/2;
+    grid-row: 4/5;   
+}
+
+.img-container-5{
+    grid-area: img5;
+    grid-column: 1/2;
+    grid-row: 5/6;    
+}
+
+.img-container-6{
+    grid-area: img6; 
+    grid-column: 1/2;
+    grid-row:6/7 ;   
+}
+
+.text-container-1{
+    grid-area: text1;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.text-container-2{
+    grid-area: text2; 
+    grid-column: 2/3;  
+    grid-row: 2/3; 
+}
+
+.text-container-3{
+    grid-area: text3; 
+    grid-column: 2/3; 
+    grid-row: 3/4;  
+}
+
+.text-container-4{
+    grid-area: text4; 
+    grid-column: 2/3; 
+    grid-row: 4/5;  
+}
+
+.text-container-5{
+    grid-area: text5; 
+    grid-column: 2/3; 
+    grid-row: 5/6;  
+}
+
+.text-container-6{
+    grid-area: text6; 
+    grid-column: 2/3;  
+    grid-row: 6/7; 
+}
+
+.pasos-mini-contenedor-texto p{
+    font-size: 18px;
+    color: #754D2B;
+    text-align: left;
+    font-weight: 600;
+}
+
+.listos-contenedor{
+    margin-bottom: 170px;
+    
+}
+
+.listos-contenedor h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 49px;
+    text-align: left;
+    margin-bottom: 40px;
+
+}
+
+.saber-mas-contenedor h3{
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.saber-mas-contenedor p{
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #754D2B;
+    margin-bottom: 73px;
+}
+
+.saber-mas-contenedor p a{
+    color:#357BA7;
+    font-weight: 600;
+}
+/*Fin Página Cómo Comprar*/
+
 
 
 /*Inicio del Footer*/
@@ -366,15 +520,14 @@ footer{
     align-items: center;
     background-color: #F3E4D5;
 }
-footer .ig-image{
-    margin-top: 100px;
-    margin-bottom: 32px;
-}
+
 footer h3{
     font-size: 26px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #754D2B;
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 hr{
    width: 50%;
@@ -384,12 +537,28 @@ hr{
    border-radius: 50px;
    
 }
+footer .footer-contenedor-contenido p{
+    color: #754D2B;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 400;
+    
+}
+footer .footer-col-1 p{
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
 footer .footer-contenedor-contenido{
-    padding-bottom: 30px;
+    padding: 45px 80px;
     height: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
     background-color: #F3E4D5;
     
@@ -402,12 +571,8 @@ footer .contenedor-datos-contacto{
     margin-top: 10px; 
 }
 
-footer .footer-contenedor-contenido p{
-    color: #754D2B;
-    font-size: 16px;
-    margin-left: 20px;
-    font-weight: 400;
-    
+footer .footer-col-3{
+    text-align: center;
 }
 
 /*Fin del Footer*/
