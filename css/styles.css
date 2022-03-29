@@ -371,8 +371,6 @@ button {
 
 .como-comprar-main h1{
     font-size: 49px;
-    
-
 }
 
 .pasos-comprar-contanedor{
@@ -510,6 +508,79 @@ button {
     font-weight: 600;
 }
 /*Fin Página Cómo Comprar*/
+
+/*Inicio de preguntas frecuentes*/
+.preguntas-frecuentes-main{
+    margin-top:140px;
+    padding-bottom: 61px;
+    background-image: url(../imagenes/preguntas-frecuentes/preguntas-frecuentes-background.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+
+
+.preguntas-frecuentes-main h1{
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 49px;
+    line-height: 65px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.preguntas-frecuentes-main h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 3px #ED6D61 solid;
+    display:inline-block;
+    width: auto;
+    padding-left: 80px;
+    padding-right: 10px;
+}
+
+.preguntas-frecuentes-main h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    padding-left: 80px;
+    padding-right: 10px;
+    color: #357BA7;
+    margin-bottom: 25px;
+}
+
+.preguntas-frecuentes-main p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15px;
+    color: #754D2B;
+    padding-left: 80px;
+    padding-right: 120px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/*Fin de preguntas frecuentes*/
+
+
+
 
 
 
