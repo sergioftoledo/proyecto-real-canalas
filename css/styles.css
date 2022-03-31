@@ -137,12 +137,12 @@ button {
 
 /* Seccion 2 */
 .seccion-2 {
-    background-image: url(./../imagenes/inicio/seccion-2/fondo-seccion-2.png);
-    background-size: cover;
+    background-image: url(./../imagenes/inicio/seccion-2/fondo-seccion-2.png); 
+     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 1024px;
+    height: 1672px;
 }
 
 .seccion-2 h3 {
@@ -152,17 +152,37 @@ button {
     font-size: 2rem;
     color: #754D2B;
     font-weight: 500;
-    padding: 70px 0;
+    padding: 40px 0;
 }
 
 .contenedor-tarjeta {
     display: flex;
     justify-content: space-evenly;
-    
+    transition: 0.3s;
 }
 
-.tarjeta {
+.tarjeta:hover {
+    box-shadow: 0 0 7px black;
+    transition: 0.3s;
+}
+
+.contenedor-tarjeta a {
+    text-decoration: none;
+}
+
+.tarjeta,
+.tarjeta-lenceria {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tarjeta-img {
+    width: 316px;
+    height: 421px;
+}
+
+.tarjeta-img  img {
+    width: 100%;
+    height: 100%;
 }
 
 .tarjeta-info {
@@ -172,12 +192,18 @@ button {
     background-color: #fff;
 }
 
+.contenedor-producto-nombre {
+    
+    margin-top: 10px;
+}
+
 .producto-nombre {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
     color: #754D2B;
+    margin-top: 10px;
 }
 
 .contenedor-producto-precio {
@@ -192,10 +218,40 @@ button {
 
 }
 
+.contenedor-imagenes-colores-prenda {
+    padding-bottom: 10px;
+}
+
 .contenedor-imagenes-colores-prenda  img{
     margin-right: 16px;
 }
 
+.contenedor-lencerias h2 {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #754D2B;
+    margin: 40px 0;
+
+}
+
+.contenedor-tarjeta-lencerias {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-tarjeta-lencerias a {
+    text-decoration: none;
+}
+
+.tarjeta-lenceria {
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.tarjeta-lenceria:hover {
+    box-shadow: 0 0 7px black;
+}
 .contenedor-boton-todos-productos {
     display: flex;
     justify-content: center;
@@ -222,7 +278,7 @@ button {
     font-size: 2rem;
     color: #754D2B;
     font-weight: 500;
-    margin-top: 140px;
+    margin-top: 185px;
 }
 
 
@@ -311,6 +367,125 @@ button {
 }
 
 /* Fin pagina inicio */
+
+/* Inicio pagina conjunto velvet */
+
+.contenido-principal-conjunto {
+    background-color: #FFF;
+    padding-top: 190px;
+}
+
+.seccion-conjunto-velvet {
+    background-image: url(../imagenes/conjunto/fondo-comun/fondo-conjunto.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    padding-left: 80px;
+
+}
+
+.contenedor-conjunto-img {
+    width: 581px;
+    height: 775px;
+    left: 80px;
+}
+
+.contenedor-conjunto-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-info-conjunto {
+    margin: 0 0 0 59px;
+}
+
+.contenedor-info-conjunto h2 {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #754D2B;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.conjunto-precio {
+    font-family: 'Montserrat', sans-serif;
+    color: #ED6D61;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contenedor-texto-conjunto {
+    width: 600px;
+}
+
+.contenedor-info-conjunto p {
+    font-family: 'Montserrat', sans-serif;
+    color: #754D2B;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 45px 0;
+}
+
+.conjunto-talles,
+.conjunto-colores {
+    font-family: 'Montserrat', sans-serif;
+    color: #754D2B;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.conjunto-colores {
+    margin: 20px 0;
+}
+
+.contenedor-talles-img {
+    margin: 25px 0;
+}
+
+.contenedor-talles-img img{
+    margin-left: 10px;
+}
+
+.contenedor-conjunto-colores {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.contenedor-conjunto-colores-bikini-lupe {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.img-colores-bikini-lupe {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.img-colores-bikini-lupe img {
+    width: fit-content;
+    margin: 10px 0;
+}
+
+.contenedor-conjunto-colores img {
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.boton-comprar-conjunto {
+    padding: 14px;
+    width: 500px;
+}
+
+/* Fin inicio pagina conjunto velvet */
 
 /*Inicio de Página Universo Canalas*/
 
