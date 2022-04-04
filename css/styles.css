@@ -748,13 +748,103 @@ button {
     margin-bottom: 50px;
 }
 
-
-
-
-
 /*Fin de preguntas frecuentes*/
 
 
+
+/*Inicio Talles*/
+.tallas-main{
+    margin-top: 140px;
+}
+
+.tallas-main h1{
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 500;
+font-size: 49px;
+line-height: 65px;
+margin-bottom: 50px;
+}
+.talles-contenedor{
+    text-align: center;
+    margin-bottom: 64px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talles-contenedor .img-desktop{
+    width: 80%;
+}
+
+.talles-contenedor .img-responsive{
+    display: none;
+}
+
+.tallas-main .descripcion-contenedor{
+    padding: 0 120px;
+    padding-top: 84px;
+    background-image: url("../imagenes/talles/fondo.png");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tallas-main .descripcion-contenedor p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #754D2B;
+}
+
+.descripcion-contenedor .como-tomar-medidas-contenedor{
+    margin-bottom: 75px;
+}
+
+.partes-medidas-contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.partes-medidas-contenedor .texto{
+    grid-column: 1/2;
+}
+
+.partes-medidas-contenedor .texto h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.15px;
+    text-align: left;
+    color: #357BA7;
+    margin-bottom: 22px;
+}
+
+.partes-medidas-contenedor .texto p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    color: #754D2B;
+    text-align: left;
+    margin-bottom: 86px;
+}
+
+.partes-medidas-contenedor .modelo-contenedor{
+    grid-column: 2/3;
+    
+}
+
+/*Fin Talles*/
 
 
 
@@ -822,3 +912,288 @@ footer .footer-col-3{
 }
 
 /*Fin del Footer*/
+
+
+
+
+/*Responsive*/
+/*Responsive*/
+/*Responsive*/
+@media only screen and (max-width: 768px) {
+/*Inicio Como comprar*/
+    /*Fin elementos generales*/
+    header{
+        display: none;
+    }
+
+
+    footer .footer-contenedor-contenido{
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer  h3{
+        margin-bottom: 15px;
+    }
+
+    footer .footer-col-1 p{
+        margin-bottom: 15px;
+    }
+
+    footer .footer-col-2{
+        margin: 40px 0 60px 0;
+    }
+
+    /*Fin elementos generales*/
+
+
+    .como-comprar-main .pasos-comprar-contanedor{
+        width: 60%;
+    }
+    
+    .como-comprar-main .listos-contenedor
+    {
+        text-align: center;
+        margin-bottom: 50px;
+        
+    }
+
+    .como-comprar-main .listos-contenedor h2
+    {
+        font-size: 45px;
+        margin-bottom: 25px;
+        text-align: center;
+        
+    }
+
+
+    .como-comprar-main .saber-mas-contenedor h3{
+        margin-bottom: 30px;
+
+    }
+    /*Fin Como comprar*/
+
+        /*Inicio Talles*/
+        .tallas-main .talles-contenedor .img-desktop{
+            width: 95%;
+        }
+        .tallas-main .como-tomar-medidas-contenedor{
+            width: 90%;
+            margin: auto;
+        }
+    
+        .tallas-main .como-tomar-medidas-contenedor h2{
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+    
+        .tallas-main .como-tomar-medidas-contenedor p{
+            font-size: 22px;
+            margin-bottom: 60px;
+        }
+    
+        .tallas-main .descripcion-contenedor{
+            padding:0;
+    
+    
+        }
+        .partes-medidas-contenedor{
+            grid-template-columns: 1fr;
+            width: 90%;
+            margin: auto;
+            
+        }
+    
+        .partes-medidas-contenedor .texto{
+            grid-column: 1/2;
+            
+        }
+    
+        .partes-medidas-contenedor .texto h3, .partes-medidas-contenedor .texto p{
+            text-align: center;
+            
+        }
+    
+        .partes-medidas-contenedor .modelo-contenedor{
+            grid-column: 1/2;
+        }
+    
+        .partes-medidas-contenedor .modelo-contenedor img{
+            height: 70%;
+        }
+    
+        /*Fin Talles*/
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    /*Inicio de elementos Generales*/
+    
+    
+    header{
+        flex-direction: column;
+        display: none;
+    }
+
+    header .navegacion{
+        flex-direction: column;
+    }
+
+    header .contenedor-navegacion{
+        flex-direction: column;
+    }
+    
+    footer .footer-contenedor-contenido{
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer  h3{
+        margin-bottom: 15px;
+    }
+
+    footer .footer-col-1 p{
+        margin-bottom: 15px;
+    }
+
+    footer .footer-col-2{
+        margin: 40px 0 60px 0;
+    }
+
+
+    /*Fin de elementos generales*/
+
+
+
+    /*Inicio Universo Canalas*/
+    .universo-canales-main h1{
+        margin-bottom: 20px;
+    }
+
+
+
+    .descripcion-canalas-contenedor, .historia-contenedor{
+        width: 90%;
+    }
+
+    .descripcion-canalas-contenedor p, .historia-contenedor p{
+        font-size: 22px;
+    }
+
+    .descripcion-canalas-contenedor{
+        margin-bottom: 40px;
+    }
+    /*Fin Universo Canalas*/
+
+
+
+    /*Inicio Como comprar*/
+    .como-comprar-main .pasos-comprar-contanedor{
+        width: 90%;
+        margin-top: 35px;
+        
+    }
+
+    .como-comprar-main h1{
+        text-align: center;
+        font-size: 45px;
+        
+    }
+    .como-comprar-main .pasos-comprar-contanedor p{
+        font-size: 17px;
+        
+    }
+
+    .como-comprar-main .listos-contenedor
+    {
+        text-align: center;
+        margin-bottom: 50px;
+        width: 90%;
+        
+        
+    }
+
+    .como-comprar-main .listos-contenedor h2
+    {
+        font-size: 45px;
+        margin-bottom: 25px;
+        text-align: center;
+        
+    }
+
+    .como-comprar-main .saber-mas-contenedor h3{
+        margin-bottom: 30px;
+
+    }
+
+    .como-comprar-main .saber-mas-contenedor p{
+        margin-bottom: 30px;
+
+    }
+    /*Fin Como comprar*/
+
+    /*Inicio Talles*/
+    .tallas-main .talles-contenedor .img-desktop{
+        display: none;
+    }
+
+    .talles-contenedor .img-responsive{
+        display: block;
+        width: 80%;
+    }
+    .tallas-main .como-tomar-medidas-contenedor{
+        width: 90%;
+        margin: auto;
+    }
+
+    .tallas-main .como-tomar-medidas-contenedor h2{
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    .tallas-main .como-tomar-medidas-contenedor p{
+        font-size: 22px;
+        margin-bottom: 60px;
+    }
+
+    .tallas-main .descripcion-contenedor{
+        padding:0;
+
+
+    }
+    .partes-medidas-contenedor{
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: auto;
+        
+    }
+
+    .partes-medidas-contenedor .texto{
+        grid-column: 1/2;
+        
+    }
+
+    .partes-medidas-contenedor .texto h3, .partes-medidas-contenedor .texto p{
+        text-align: center;
+        
+    }
+
+    .partes-medidas-contenedor .modelo-contenedor{
+        grid-column: 1/2;
+    }
+
+    .partes-medidas-contenedor .modelo-contenedor img{
+        height: 70%;
+    }
+
+    /*Fin Talles*/
+
+
+
+  }
