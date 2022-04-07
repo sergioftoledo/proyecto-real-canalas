@@ -142,7 +142,7 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 1672px;
+    height: auto;
 }
 
 .seccion-2 h3 {
@@ -158,7 +158,12 @@ button {
 .contenedor-tarjeta {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     transition: 0.3s;
+}
+
+.tarjeta {
+    margin: 20px 0;
 }
 
 .tarjeta:hover {
@@ -237,6 +242,7 @@ button {
 
 .contenedor-tarjeta-lencerias {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -245,17 +251,22 @@ button {
 }
 
 .tarjeta-lenceria {
-    margin-right: 20px;
+    margin: 20px 20px 0;
     transition: 0.3s;
 }
 
 .tarjeta-lenceria:hover {
     box-shadow: 0 0 7px black;
 }
+
 .contenedor-boton-todos-productos {
     display: flex;
     justify-content: center;
     margin: 110px 0 40px 0;
+}
+
+.contenedor-boton-todos-productos a {
+    text-decoration: none;
 }
 
 .contenedor-boton-todos-productos button {
@@ -368,14 +379,19 @@ button {
 
 /* Fin pagina inicio */
 
-/* Inicio pagina conjunto velvet */
+/* Inicio pagina conjunto */
 
 .contenido-principal-conjunto {
     background-color: #FFF;
     padding-top: 190px;
 }
 
-.seccion-conjunto-velvet {
+.seccion-enteriza-kika,
+.seccion-bikini-lupe,
+.seccion-enteriza-susy,
+.seccion-bikini-calixa,
+.seccion-conjunto-velvet,
+.seccion-conjunto-ambar {
     background-image: url(../imagenes/conjunto/fondo-comun/fondo-conjunto.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -485,7 +501,7 @@ button {
     width: 500px;
 }
 
-/* Fin inicio pagina conjunto velvet */
+/* Fin inicio pagina conjunto */
 
 /*Inicio de Página Universo Canalas*/
 
