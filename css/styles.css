@@ -46,7 +46,7 @@ header {
     background-color: #F3E4D5;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 10px;
     transition: 0.4s;
 }
@@ -117,7 +117,7 @@ header {
     right: 0;
 }
 
-button {
+.boton-comprar-header {
     text-transform: uppercase;
     padding: 12px;
     font-weight: 700;
@@ -127,7 +127,88 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 0.85rem;
 }
+
+/* Menu hamburguesa */
+.btn-hamburguesa {
+    display: none;
+
+}
+@media (max-width: 1240px) {
+
+    .btn-hamburguesa {
+        display: block;
+    }
+
+    .menu-btn {
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.5rem;
+        color: #754D2B;
+        cursor: pointer;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    .navegacion {
+        display: none;
+    }
+
+    .offcanvas-header {
+        padding: 10px;
+        background-color: #F3E4D5;
+    }
+
+    .header-menu-offcanvas {
+        margin: 0 auto;
+    }
+
+    .header-menu-offcanvas img {
+        width: 100px;
+    }
+
+    .offcanvas-body {
+        background-color: #F9F1EA;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav-offcanvas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navegacion-offcanvas {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .navegacion-offcanvas li {
+        margin: 30px 0;
+        list-style: none;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .navegacion-offcanvas a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 1.3rem;
+        transition: 0.3s;
+        cursor: pointer;
+        color: #754D2B;
+    }
+}
+
+/* Fin menu hamburguesa */
+
 
 /* Seccion 1 */
 .banner {
@@ -292,6 +373,25 @@ button {
     margin-top: 185px;
 }
 
+/* Seccion 2 responsive */
+@media (max-width: 530px) {
+    .seccion-2 h3  {
+        font-size: 1.6rem;
+        padding: 25px 0;
+    }
+
+    .contenedor-lencerias h2 {
+        font-size: 1.6rem;
+        margin: 25px 0;
+    }
+    .tarjeta-img {
+        width: 280px;
+        height: 385px;
+    }  
+}
+
+/* Fin seccion 2 responsive */
+
 
 /* Seccion 3 */
 .seccion-3 {
@@ -339,6 +439,45 @@ button {
     color: #357BA7;
 }
 
+/* Seccion 3 responsive */
+
+@media (max-width: 1140px) {
+    
+    .contenedor-preguntas-frecuentes {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 65px;
+    }
+
+    .contenedor-preguntas-frecuentes div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-preguntas-frecuentes div:nth-child(2) {
+        border-top: 2px solid #754D2B;
+        border-right: none;
+        border-bottom: 2px solid #754D2B;
+        border-left: none;
+    }
+
+    .contenedor-preguntas-frecuentes div {
+        padding: 7px 0;        
+    }
+
+}
+
+@media (max-width: 530px) {
+    .visita-nuestra-seccion {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+/* Fin seccion 3 responsive */
+
+
 /* Seccion 4 */
 .contenedor-compra-canalas {
     display: flex;
@@ -358,6 +497,7 @@ button {
 }
 
 .ver-estado-compra {
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     color: #357BA7;
@@ -393,20 +533,21 @@ button {
 .seccion-conjunto-velvet,
 .seccion-conjunto-ambar {
     background-image: url(../imagenes/conjunto/fondo-comun/fondo-conjunto.png);
-    background-position: center;
+    background-position: unset;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
-    height: 1080px;
+    height: auto;
     display: flex;
     justify-content: center;
-    padding-left: 80px;
+    flex-wrap: wrap;
+    padding: 0 0 30px 80px;
 
 }
 
 .contenedor-conjunto-img {
-    width: 581px;
-    height: 775px;
+    min-width: 581px;
+    min-height: 775px;
     left: 80px;
 }
 
@@ -437,7 +578,7 @@ button {
 }
 
 .contenedor-texto-conjunto {
-    width: 600px;
+    width: auto;
 }
 
 .contenedor-info-conjunto p {
@@ -497,9 +638,72 @@ button {
 }
 
 .boton-comprar-conjunto {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background: #357BA7;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.85rem;
     padding: 14px;
     width: 500px;
 }
+
+/* Pagina conjunto responsive */
+
+@media (min-width: 350px) and (max-width: 768px) {
+    .contenedor-conjunto-img {
+        min-width: 300px;
+        min-height: 496px;
+    }
+
+    .contenedor-info-conjunto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 80px;
+    }
+
+    .contenedor-info-conjunto h2,
+    .conjunto-precio {
+        font-size: 1.4rem;
+    }
+
+    .seccion-enteriza-kika, .seccion-bikini-lupe, .seccion-enteriza-susy, .seccion-bikini-calixa, .seccion-conjunto-velvet, .seccion-conjunto-ambar {
+         padding-left: 0;
+    }
+
+    .boton-comprar-conjunto {
+        width: 300px;
+    }
+
+    .contenedor-conjunto-colores-bikini-lupe {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1220px) {
+    .contenedor-conjunto-img {
+        min-width: 400px;
+        min-height: 594px;
+        margin-bottom: 30px;
+    }
+
+    .contenedor-info-conjunto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-info-conjunto p {
+        text-align: center;
+    }
+}
+
+/* Pagina conjunto responsive */
 
 /* Fin inicio pagina conjunto */
 
@@ -819,6 +1023,9 @@ footer .footer-contenedor-contenido{
     padding: 45px 80px;
     height: auto;
     display: flex;
+    /* PROVISORIO CONE */
+    flex-direction: column;
+    /* FIN PROVISORIO CONE */
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
