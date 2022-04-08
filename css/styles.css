@@ -1145,10 +1145,6 @@ footer .footer-col-3{
 @media only screen and (max-width: 768px) {
 /*Inicio Como comprar*/
     /*Fin elementos generales*/
-    header{
-        display: none;
-    }
-
 
     footer .footer-contenedor-contenido{
         flex-direction: column;
@@ -1255,12 +1251,6 @@ footer .footer-col-3{
 
 @media only screen and (max-width: 480px) {
     /*Inicio de elementos Generales*/
-    
-    
-    header{
-        flex-direction: column;
-        display: none;
-    }
 
     header .navegacion{
         flex-direction: column;

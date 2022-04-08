@@ -3,13 +3,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Universo Canalas</title>
+    <!-- Meta etiqueta description -->
+    <meta name="description" content="Canalas Bikinis se caracteriza por su estilo fresco, divertido, colorido, descontracturado y sobre todo, inclusivo, que busca atraer la atención de un público joven de mujeres, fomentando el amor propio y la autoaceptación, principalmente, a la hora de vestir un traje de baño.">
+    <!-- Meta etiqueta keywords -->
+    <meta name="keywords" content="bikini de baño mujer, mujeres traje de baño, bikini talle grande, el bikini o la bikini, traje baños de mujeres, , bikini talle 120, bikini talle 100, bikini talle 1, bikini talle 105, bikinis talle 100, bikini mujer 2022, bikinis 2021 precio, bikini talle 3, bikini talle 4, bikinis talle 5, bikini tiro alto talla grande">
+    <!-- Protocolo Open Graph -->
+    <meta property="og:title" content="Canalas Bikinis | Nuestros Talles">
+    <meta property="og:url" content="https://sergioftoledo.github.io/proyecto-real-canalas/">
+    <meta property="og:image" content="https://i.ibb.co/YpdL3PP/Logo.png">
+    <meta property="og:description" content="Canalas Bikinis se caracteriza por su estilo fresco, divertido, colorido, descontracturado y sobre todo, inclusivo, que busca atraer la atención de un público joven de mujeres, fomentando el amor propio y la autoaceptación, principalmente, a la hora de vestir un traje de baño.">
+    <title>Canalas Bikinis | Nuestros Talles</title>
     <!--Favicon-->
     <link
       rel="icon"
       type="image/x-icon"
       href="../imagenes/favicon/favicon-32x32.png"
     />
+    <!-- CDN Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Custom Styles-->
     <link rel="stylesheet" href="../css/styles.css" />
 
@@ -25,18 +38,44 @@
   <body>
     <!-- Cabecera -->
     <header>
-        <a href="./index.html">
+      <!-- Icono menu hambueguesa -->
+      <div class="btn-hamburguesa">
+          <i class="fas fa-bars menu-btn" data-bs-toggle="offcanvas" data-bs-target="#menu-hamburguesa" aria-controls="menu-hamburguesa"></i>
+      </div>
+        <a href="../index.html">
             <img class="logo-canalas" src="../imagenes/logo/Logo.png" alt="Logo Canalas Bikinis">
         </a>
         <nav class="navegacion">
             <ul class="contenedor-navegacion">
-                <li><a class="hvr-underline-from-left"  href="./index.html">inicio</a></li>
-                <li><a class="hvr-underline-from-left"  href="../paginas/universo-canales.html">universo canalas</a></li>
-                <li><a class="hvr-underline-from-left"  href="../paginas/como-comprar.html">¿cómo comprar?</a></li>
+                <li><a class="hvr-underline-from-left"  href="../index.html">inicio</a></li>
+                <li><a class="hvr-underline-from-left"  href="./universo-canales.html">universo canalas</a></li>
+                <li><a class="hvr-underline-from-left"  href="./como-comprar.html">¿cómo comprar?</a></li>
                 <li><a class="hvr-underline-from-left"  href="#">nuestros talles</a></li>                
             </ul>
-            <button>comprar</button>
+            <a href="https://wa.me/+5491112345678?text=¡Hola+estoy+interesado!" target="_blank">
+                <button class="boton-comprar-header">comprar</button>
+            </a>
         </nav>
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="menu-hamburguesa" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+        <a class="header-menu-offcanvas" href="../index.html"><img src="../imagenes/logo/Logo.png" alt="Logo canalas bikinis"></a>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="nav-offcanvas">
+                    <ul class="navegacion-offcanvas">
+                <li><a class="hvr-underline-from-left" href="../index.html">inicio</a></li>
+                <li><a class="hvr-underline-from-left" href="./universo-canales.html">universo canalas</a></li>
+                <li><a class="hvr-underline-from-left" href="./como-comprar.html">¿cómo comprar?</a></li>
+                <li><a class="hvr-underline-from-left" href="./tallas.html">nuestros talles</a></li>
+                    </ul>
+                </nav>
+                <a href="https://wa.me/+5491112345678?text=¡Hola+estoy+interesadx!" target="_blank">
+                    <button class="boton-comprar-header">comprar</button>
+                </a>
+            </div>
+          </div>
     </header>
 
     <main class="tallas-main">
@@ -110,5 +149,10 @@
         </div>
       </div>
     </footer>
+     <!-- JS -->
+     <script src="../js/scroll.js"></script>
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   </body>
 </html>
