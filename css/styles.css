@@ -667,6 +667,7 @@ header {
   .contenedor-info-conjunto h2,
   .conjunto-precio {
     font-size: 1.4rem;
+    text-align: center;
   }
 
   .seccion-enteriza-kika,
@@ -920,7 +921,7 @@ h2,
   font-size: 49px;
   line-height: 65px;
   text-align: center;
-  margin-bottom: 75px;
+  /* margin-bottom: 75px; */
 }
 
 .preguntas-frecuentes-main h2 {
@@ -937,6 +938,8 @@ h2,
   width: auto;
   padding-left: 80px;
   padding-right: 10px;
+  /* PRUEBA */
+  padding-top: 100px;
 }
 
 .preguntas-frecuentes-main h3 {
