@@ -1,520 +1,514 @@
 /* Fuente */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:wght@500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:wght@500;600&display=swap");
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
 }
 
 /* Pagina inicio */
 
 body {
-    background-color: #fff;
+  background-color: #fff;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 h1 {
-    font-size: 99px;
-    font-family: "Playfair Display", serif;
-    color: #ed6d61;
+  font-size: 99px;
+  font-family: "Playfair Display", serif;
+  color: #ed6d61;
 }
 
 h2 {
-    font-size: 62px;
-    font-family: "Playfair Display", serif;
+  font-size: 62px;
+  font-family: "Playfair Display", serif;
 }
 
 h3 {
-    font-size: 49px;
-    color: #ed6d61;
-    font-family: "Playfair Display", serif;
+  font-size: 49px;
+  color: #ed6d61;
+  font-family: "Playfair Display", serif;
 }
 
 p {
-    font-size: 30px;
-    color: #357ba7;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+  font-size: 30px;
+  color: #357ba7;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
-
 header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-    background-color: #F3E4D5;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 10px;
-    transition: 0.4s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #f3e4d5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  transition: 0.4s;
 }
 
 .scrollOn {
-    padding: 1px 12px;
-    justify-content: space-around;
-    transition: 0.4s;
+  padding: 1px 12px;
+  justify-content: space-around;
+  transition: 0.4s;
 }
 
 .logo-canalas {
-    width: 120px;
-    margin: 10px 20px;
+  width: 120px;
+  margin: 10px 20px;
 }
 
 .navegacion {
-    display: flex;
-    margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
 }
 
 .contenedor-navegacion {
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    list-style: none;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
 }
 
 .contenedor-navegacion li {
-    padding: 5px 15px;
-    margin: 0 30px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
+  padding: 5px 15px;
+  margin: 0 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .contenedor-navegacion li a {
-    text-decoration: none;
-    color: #754D2B;
-    padding: 5px 0;
+  text-decoration: none;
+  color: #754d2b;
+  padding: 5px 0;
 }
 
 /* Underline From Left */
 .hvr-underline-from-left {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    position: relative;
-    overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  overflow: hidden;
 }
 .hvr-underline-from-left:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 100%;
-    bottom: 0;
-    background: #754D2B;
-    height: 3px;
-    -webkit-transition-property: right;
-    transition-property: right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #754d2b;
+  height: 3px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
-.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
-    right: 0;
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
 }
 
 .boton-comprar-header {
-    text-transform: uppercase;
-    padding: 12px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    background: #357BA7;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 0.85rem;
+  text-transform: uppercase;
+  padding: 12px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: #357ba7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
 }
 
 /* Menu hamburguesa */
 .btn-hamburguesa {
-    display: none;
-
+  display: none;
 }
 @media (max-width: 1240px) {
+  .btn-hamburguesa {
+    display: block;
+  }
 
-    .btn-hamburguesa {
-        display: block;
-    }
+  .menu-btn {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: #754d2b;
+    cursor: pointer;
+  }
 
-    .menu-btn {
-        padding: 10px;
-        margin: 10px;
-        font-size: 1.5rem;
-        color: #754D2B;
-        cursor: pointer;
-    }
+  header {
+    justify-content: space-around;
+  }
 
-    header {
-        justify-content: space-around;
-    }
+  .navegacion {
+    display: none;
+  }
 
-    .navegacion {
-        display: none;
-    }
+  .offcanvas-header {
+    padding: 10px;
+    background-color: #f3e4d5;
+  }
 
-    .offcanvas-header {
-        padding: 10px;
-        background-color: #F3E4D5;
-    }
+  .header-menu-offcanvas {
+    margin: 0 auto;
+  }
 
-    .header-menu-offcanvas {
-        margin: 0 auto;
-    }
+  .header-menu-offcanvas img {
+    width: 100px;
+  }
 
-    .header-menu-offcanvas img {
-        width: 100px;
-    }
+  .offcanvas-body {
+    background-color: #f9f1ea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    .offcanvas-body {
-        background-color: #F9F1EA;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .nav-offcanvas {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .nav-offcanvas {
-        display: flex;
-        flex-direction: column;
-    }
+  .navegacion-offcanvas {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
 
-    .navegacion-offcanvas {
-        display: flex;
-        flex-direction: column;
-        padding-left: 0;
-    }
+  .navegacion-offcanvas li {
+    margin: 30px 0;
+    list-style: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
 
-    .navegacion-offcanvas li {
-        margin: 30px 0;
-        list-style: none;
-        transition: 0.3s;
-        cursor: pointer;
-    }
-
-    .navegacion-offcanvas a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 1.3rem;
-        transition: 0.3s;
-        cursor: pointer;
-        color: #754D2B;
-    }
+  .navegacion-offcanvas a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #754d2b;
+  }
 }
 
 /* Fin menu hamburguesa */
 
-
 /* Seccion 1 */
 .banner {
-    padding-top: 113px;
-    width: 100%;
+  padding-top: 113px;
+  width: 100%;
 }
 
 /* Seccion 2 */
 .seccion-2 {
-    background-image: url(./../imagenes/inicio/seccion-2/fondo-seccion-2.png); 
-     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
+  background-image: url(./../imagenes/inicio/seccion-2/fondo-seccion-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
 }
 
 .seccion-2 h3 {
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2rem;
-    color: #754D2B;
-    font-weight: 500;
-    padding: 40px 0;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #754d2b;
+  font-weight: 500;
+  padding: 40px 0;
 }
 
 .contenedor-tarjeta {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    transition: 0.3s;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  transition: 0.3s;
 }
 
 .tarjeta {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .tarjeta:hover {
-    box-shadow: 0 0 7px black;
-    transition: 0.3s;
+  box-shadow: 0 0 7px black;
+  transition: 0.3s;
 }
 
 .contenedor-tarjeta a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .tarjeta,
 .tarjeta-lenceria {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .tarjeta-img {
-    width: 316px;
-    height: 421px;
+  width: 316px;
+  height: 421px;
 }
 
-.tarjeta-img  img {
-    width: 100%;
-    height: 100%;
+.tarjeta-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .tarjeta-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
 }
 
 .contenedor-producto-nombre {
-    
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .producto-nombre {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #754D2B;
-    margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #754d2b;
+  margin-top: 10px;
 }
 
 .contenedor-producto-precio {
-    padding: 12px 0;
+  padding: 12px 0;
 }
 
 .producto-precio {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #ED6D61;
-
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ed6d61;
 }
 
 .contenedor-imagenes-colores-prenda {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
-.contenedor-imagenes-colores-prenda  img{
-    margin-right: 16px;
+.contenedor-imagenes-colores-prenda img {
+  margin-right: 16px;
 }
 
 .contenedor-lencerias h2 {
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    font-size: 2rem;
-    color: #754D2B;
-    margin: 40px 0;
-
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #754d2b;
+  margin: 40px 0;
 }
 
 .contenedor-tarjeta-lencerias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contenedor-tarjeta-lencerias a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .tarjeta-lenceria {
-    margin: 20px 20px 0;
-    transition: 0.3s;
+  margin: 20px 20px 0;
+  transition: 0.3s;
 }
 
 .tarjeta-lenceria:hover {
-    box-shadow: 0 0 7px black;
+  box-shadow: 0 0 7px black;
 }
 
 .contenedor-boton-todos-productos {
-    display: flex;
-    justify-content: center;
-    margin: 110px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  margin: 110px 0 40px 0;
 }
 
 .contenedor-boton-todos-productos a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .contenedor-boton-todos-productos button {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    background: #357BA7;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: #357ba7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
 }
 
 .saber-mas {
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    font-size: 2rem;
-    color: #754D2B;
-    font-weight: 500;
-    margin-top: 185px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #754d2b;
+  font-weight: 500;
+  margin-top: 185px;
 }
 
 /* Seccion 2 responsive */
 @media (max-width: 530px) {
-    .seccion-2 h3  {
-        font-size: 1.6rem;
-        padding: 25px 0;
-    }
+  .seccion-2 h3 {
+    font-size: 1.6rem;
+    padding: 25px 0;
+  }
 
-    .contenedor-lencerias h2 {
-        font-size: 1.6rem;
-        margin: 25px 0;
-    }
-    .tarjeta-img {
-        width: 280px;
-        height: 385px;
-    }  
+  .contenedor-lencerias h2 {
+    font-size: 1.6rem;
+    margin: 25px 0;
+  }
+  .tarjeta-img {
+    width: 280px;
+    height: 385px;
+  }
 }
 
 /* Fin seccion 2 responsive */
 
-
 /* Seccion 3 */
 .seccion-3 {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .contenedor-preguntas-frecuentes {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .contenedor-preguntas-frecuentes div {
-    padding: 0 50px;
+  padding: 0 50px;
 }
 
 .contenedor-preguntas-frecuentes div:nth-child(2) {
-    border-left: 2px solid #754D2B;
-    border-right: 2px solid #754D2B;
+  border-left: 2px solid #754d2b;
+  border-right: 2px solid #754d2b;
 }
 
 .contenedor-preguntas-frecuentes p {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: #ED6D61;
-    padding: 15px 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #ed6d61;
+  padding: 15px 0;
+  
 }
 
 .preguntas-frecuentes {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;   
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
 }
 
 .visita-nuestra-seccion {
-    color: #754D2B;
-    font-size: 1.3rem;
+  color: #754d2b;
+  font-size: 1.3rem;
 }
 
 .visita-nuestra-seccion a {
-    color: #357BA7;
+  color: #357ba7;
 }
 
 /* Seccion 3 responsive */
 
 @media (max-width: 1140px) {
-    
-    .contenedor-preguntas-frecuentes {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 65px;
-    }
+  .contenedor-preguntas-frecuentes {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+  }
 
-    .contenedor-preguntas-frecuentes div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .contenedor-preguntas-frecuentes div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .contenedor-preguntas-frecuentes div:nth-child(2) {
-        border-top: 2px solid #754D2B;
-        border-right: none;
-        border-bottom: 2px solid #754D2B;
-        border-left: none;
-    }
+  .contenedor-preguntas-frecuentes div:nth-child(2) {
+    border-top: 2px solid #754d2b;
+    border-right: none;
+    border-bottom: 2px solid #754d2b;
+    border-left: none;
+  }
 
-    .contenedor-preguntas-frecuentes div {
-        padding: 7px 0;        
-    }
-
+  .contenedor-preguntas-frecuentes div {
+    padding: 7px 0;
+  }
 }
 
 @media (max-width: 530px) {
-    .visita-nuestra-seccion {
-        font-size: 1rem;
-        text-align: center;
-    }
+  .visita-nuestra-seccion {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 /* Fin seccion 3 responsive */
 
-
 /* Seccion 4 */
 .contenedor-compra-canalas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f8f1e9;
-    ;    ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f1e9;
 }
 
 .ya-compraste-canalas {
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    font-size: 2rem;
-    color: #754D2B;
-    font-weight: 500;
-    margin: 25px 0;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #754d2b;
+  font-weight: 500;
+  margin: 25px 0;
 }
 
 .ver-estado-compra {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    color: #357BA7;
-    font-weight: 500;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #357ba7;
+  font-weight: 500;
 }
 
 .contenedor-compra-canalas button {
-    text-transform: uppercase;
-    padding: 12px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    background: #357BA7;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 20px 0;
+  text-transform: uppercase;
+  padding: 12px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: #357ba7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0;
 }
 
 /* Fin pagina inicio */
@@ -522,8 +516,8 @@ header {
 /* Inicio pagina conjunto */
 
 .contenido-principal-conjunto {
-    background-color: #FFF;
-    padding-top: 190px;
+  background-color: #fff;
+  padding-top: 190px;
 }
 
 .seccion-enteriza-kika,
@@ -532,175 +526,184 @@ header {
 .seccion-bikini-calixa,
 .seccion-conjunto-velvet,
 .seccion-conjunto-ambar {
-    background-image: url(../imagenes/conjunto/fondo-comun/fondo-conjunto.png);
-    background-position: unset;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0 0 30px 80px;
-
+  background-image: url(../imagenes/conjunto/fondo-comun/fondo-conjunto.png);
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 0 30px 80px;
 }
 
 .contenedor-conjunto-img {
-    min-width: 581px;
-    min-height: 775px;
-    left: 80px;
+  /*min-width: 581px;*/
+  width: 40%;
+  min-height: 775px;
+  left: 80px;
+  
 }
 
 .contenedor-conjunto-img img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: -100px;
 }
 
 .contenedor-info-conjunto {
-    margin: 0 0 0 59px;
+  margin: 0 0 0 59px;
+  width: 50%;
 }
 
 .contenedor-info-conjunto h2 {
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    font-size: 2rem;
-    color: #754D2B;
-    font-weight: 500;
-    text-align: left;
-    margin-bottom: 30px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #754d2b;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 .conjunto-precio {
-    font-family: 'Montserrat', sans-serif;
-    color: #ED6D61;
-    font-size: 2rem;
-    font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #ed6d61;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .contenedor-texto-conjunto {
-    width: auto;
+  width: auto;
 }
 
 .contenedor-info-conjunto p {
-    font-family: 'Montserrat', sans-serif;
-    color: #754D2B;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin: 45px 0;
+  font-family: "Montserrat", sans-serif;
+  color: #754d2b;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 45px 0;
 }
 
 .conjunto-talles,
 .conjunto-colores {
-    font-family: 'Montserrat', sans-serif;
-    color: #754D2B;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #754d2b;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .conjunto-colores {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .contenedor-talles-img {
-    margin: 25px 0;
+  margin: 25px 0;
 }
 
-.contenedor-talles-img img{
-    margin-left: 10px;
+.contenedor-talles-img img {
+  margin-left: 10px;
 }
 
 .contenedor-conjunto-colores {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .contenedor-conjunto-colores-bikini-lupe {
-    display: flex;
-    margin-bottom: 30px;
+  display: flex;
+  margin-bottom: 30px;
 }
 
 .img-colores-bikini-lupe {
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
 }
 
 .img-colores-bikini-lupe img {
-    width: fit-content;
-    margin: 10px 0;
+  width: fit-content;
+  margin: 10px 0;
 }
 
 .contenedor-conjunto-colores img {
-    width: fit-content;
-    margin-bottom: 10px;
+  width: fit-content;
+  margin-bottom: 10px;
 }
 
 .boton-comprar-conjunto {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    background: #357BA7;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 0.85rem;
-    padding: 14px;
-    width: 500px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: #357ba7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 14px;
+  width: 500px;
 }
 
 /* Pagina conjunto responsive */
 
 @media (min-width: 350px) and (max-width: 768px) {
-    .contenedor-conjunto-img {
-        min-width: 300px;
-        min-height: 496px;
-    }
+  .contenedor-conjunto-img {
+    min-width: 300px;
+    min-height: 496px;
+  }
 
-    .contenedor-info-conjunto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 30px 80px;
-    }
+  .contenedor-info-conjunto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 80px;
+  }
 
-    .contenedor-info-conjunto h2,
-    .conjunto-precio {
-        font-size: 1.4rem;
-    }
+  .contenedor-info-conjunto h2,
+  .conjunto-precio {
+    font-size: 1.4rem;
+  }
 
-    .seccion-enteriza-kika, .seccion-bikini-lupe, .seccion-enteriza-susy, .seccion-bikini-calixa, .seccion-conjunto-velvet, .seccion-conjunto-ambar {
-         padding-left: 0;
-    }
+  .seccion-enteriza-kika,
+  .seccion-bikini-lupe,
+  .seccion-enteriza-susy,
+  .seccion-bikini-calixa,
+  .seccion-conjunto-velvet,
+  .seccion-conjunto-ambar {
+    padding-left: 0;
+  }
 
-    .boton-comprar-conjunto {
-        width: 300px;
-    }
+  .boton-comprar-conjunto {
+    width: 300px;
+  }
 
-    .contenedor-conjunto-colores-bikini-lupe {
-        display: flex;
-        flex-direction: column;
-    }
+  .contenedor-conjunto-colores-bikini-lupe {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1220px) {
-    .contenedor-conjunto-img {
-        min-width: 400px;
-        min-height: 594px;
-        margin-bottom: 30px;
-    }
+  .contenedor-conjunto-img {
+    min-width: 400px;
+    min-height: 594px;
+    margin-bottom: 30px;
+  }
 
-    .contenedor-info-conjunto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .contenedor-info-conjunto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .contenedor-info-conjunto p {
-        text-align: center;
-    }
+  .contenedor-info-conjunto p {
+    text-align: center;
+  }
 }
 
 /* Pagina conjunto responsive */
@@ -710,703 +713,680 @@ header {
 /*Inicio de Página Universo Canalas*/
 
 .universo-canales-main {
-    background-image: url(../imagenes/universo-canalas/universo-canalas.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .descripcion-canalas-contenedor {
-    width: 55%;
-    margin: auto;
-    margin-top: 118px;
-    margin-bottom: 450px;
-  }
-  .descripcion-canalas-contenedor h1 {
-    font-size: 49px;
-    color: #ed6d61;
-    font-family: "Playfair Display", serif;
-    margin-bottom: 68px;
-  }
-  .descripcion-canalas-contenedor h1, .descripcion-canalas-contenedor p {
-    text-align: center;
-  }
-  
-  .historia-contenedor {
-    width: 55%;
-    margin: auto;
-    padding-bottom: 131px;
-  }
-  .historia-contenedor h1,h2 {
-    font-size: 49px;
-    color: #ed6d61;
-    font-family: "Playfair Display", serif;
-    margin-bottom: 68px;
-  }
-  .historia-contenedor h1, h2, .historia-contenedor p {
-    text-align: center;
-  }
+  background-image: url(../imagenes/universo-canalas/universo-canalas.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
+.descripcion-canalas-contenedor {
+  width: 55%;
+  margin: auto;
+  margin-top: 118px;
+  margin-bottom: 450px;
+}
+.descripcion-canalas-contenedor h1 {
+  font-size: 49px;
+  color: #ed6d61;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 68px;
+}
+.descripcion-canalas-contenedor h1,
+.descripcion-canalas-contenedor p {
+  text-align: center;
+}
 
+.historia-contenedor {
+  width: 55%;
+  margin: auto;
+  padding-bottom: 131px;
+}
+.historia-contenedor h1,
+h2 {
+  font-size: 49px;
+  color: #ed6d61;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 68px;
+}
+.historia-contenedor h1,
+h2,
+.historia-contenedor p {
+  text-align: center;
+}
 
 /*Fin de Página Universo Canalas*/
 
-
-
 /*Inicio Página Cómo Comprar*/
-.como-comprar-main{
-    background-image: url('../imagenes/como-comprar/fondo.png');
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 110px;
+.como-comprar-main {
+  background-image: url("../imagenes/como-comprar/fondo.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 110px;
 }
 
-.como-comprar-main h1{
-    font-size: 49px;
+.como-comprar-main h1 {
+  font-size: 49px;
 }
 
-.pasos-comprar-contanedor{
-    display: grid;
-    grid-template-columns: (78px auto);
-    grid-auto-rows: 117px;
-    column-gap: 27px;
-    width: 40%;
-    margin-top: 61px;
-    margin-bottom: 60px;
-
+.pasos-comprar-contanedor {
+  display: grid;
+  grid-template-columns: (78px auto);
+  grid-auto-rows: 117px;
+  column-gap: 27px;
+  width: 40%;
+  margin-top: 61px;
+  margin-bottom: 60px;
 }
-.pasos-mini-contenedor-img{
-    display: flex;
-    justify-content: center;  
-    align-items: center;
-}
-
-.pasos-mini-contenedor-texto{
-    display: flex; 
-    align-items: center;
+.pasos-mini-contenedor-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.img-container-1{
-    grid-area: img1;
-    grid-column: 1/2;
-    grid-row: 1/2;
+.pasos-mini-contenedor-texto {
+  display: flex;
+  align-items: center;
 }
 
-.img-container-2{
-    grid-area: img2; 
-    grid-column: 1/2;
-    grid-row: 2/3 ;   
+.img-container-1 {
+  grid-area: img1;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
-.img-container-3{
-    grid-area: img3;
-    grid-column: 1/2;
-    grid-row: 3/4;    
+.img-container-2 {
+  grid-area: img2;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
-.img-container-4{
-    grid-area: img4; 
-    grid-column: 1/2;
-    grid-row: 4/5;   
+.img-container-3 {
+  grid-area: img3;
+  grid-column: 1/2;
+  grid-row: 3/4;
 }
 
-.img-container-5{
-    grid-area: img5;
-    grid-column: 1/2;
-    grid-row: 5/6;    
+.img-container-4 {
+  grid-area: img4;
+  grid-column: 1/2;
+  grid-row: 4/5;
 }
 
-.img-container-6{
-    grid-area: img6; 
-    grid-column: 1/2;
-    grid-row:6/7 ;   
+.img-container-5 {
+  grid-area: img5;
+  grid-column: 1/2;
+  grid-row: 5/6;
 }
 
-.text-container-1{
-    grid-area: text1;
-    grid-column: 2/3;
-    grid-row: 1/2;
+.img-container-6 {
+  grid-area: img6;
+  grid-column: 1/2;
+  grid-row: 6/7;
 }
 
-.text-container-2{
-    grid-area: text2; 
-    grid-column: 2/3;  
-    grid-row: 2/3; 
+.text-container-1 {
+  grid-area: text1;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
-.text-container-3{
-    grid-area: text3; 
-    grid-column: 2/3; 
-    grid-row: 3/4;  
+.text-container-2 {
+  grid-area: text2;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
-.text-container-4{
-    grid-area: text4; 
-    grid-column: 2/3; 
-    grid-row: 4/5;  
+.text-container-3 {
+  grid-area: text3;
+  grid-column: 2/3;
+  grid-row: 3/4;
 }
 
-.text-container-5{
-    grid-area: text5; 
-    grid-column: 2/3; 
-    grid-row: 5/6;  
+.text-container-4 {
+  grid-area: text4;
+  grid-column: 2/3;
+  grid-row: 4/5;
 }
 
-.text-container-6{
-    grid-area: text6; 
-    grid-column: 2/3;  
-    grid-row: 6/7; 
+.text-container-5 {
+  grid-area: text5;
+  grid-column: 2/3;
+  grid-row: 5/6;
 }
 
-.pasos-mini-contenedor-texto p{
-    font-size: 18px;
-    color: #754D2B;
-    text-align: left;
-    font-weight: 600;
+.text-container-6 {
+  grid-area: text6;
+  grid-column: 2/3;
+  grid-row: 6/7;
 }
 
-.listos-contenedor{
-    margin-bottom: 170px;
-    
+.pasos-mini-contenedor-texto p {
+  font-size: 18px;
+  color: #754d2b;
+  text-align: left;
+  font-weight: 600;
 }
 
-.listos-contenedor h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 49px;
-    text-align: left;
-    margin-bottom: 40px;
-
+.listos-contenedor {
+  margin-bottom: 170px;
 }
 
-.saber-mas-contenedor h3{
-    font-size: 26px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    margin-bottom: 50px;
+.listos-contenedor h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 49px;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
-.saber-mas-contenedor p{
-    font-size: 26px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    color: #754D2B;
-    margin-bottom: 73px;
+.saber-mas-contenedor h3 {
+  font-size: 26px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-bottom: 50px;
 }
 
-.saber-mas-contenedor p a{
-    color:#357BA7;
-    font-weight: 600;
+.saber-mas-contenedor p {
+  font-size: 26px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #754d2b;
+  margin-bottom: 73px;
+}
+
+.saber-mas-contenedor p a {
+  color: #357ba7;
+  font-weight: 600;
 }
 /*Fin Página Cómo Comprar*/
 
 /*Inicio de preguntas frecuentes*/
-.preguntas-frecuentes-main{
-    margin-top:140px;
-    padding-bottom: 61px;
-    background-image: url(../imagenes/preguntas-frecuentes/preguntas-frecuentes-background.png);
-    background-repeat:no-repeat ;
-    background-size: cover;
+.preguntas-frecuentes-main {
+  margin-top: 140px;
+  padding-bottom: 61px;
+  background-image: url(../imagenes/preguntas-frecuentes/preguntas-frecuentes-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-
-.preguntas-frecuentes-main h1{
-    font-size: 49px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 49px;
-    line-height: 65px;
-    text-align: center;
-    margin-bottom: 75px;
+.preguntas-frecuentes-main h1 {
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 49px;
+  line-height: 65px;
+  text-align: center;
+  margin-bottom: 75px;
 }
 
-.preguntas-frecuentes-main h2{
-    font-family: 'Montserrat';
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
-    margin-bottom: 10px;
-    text-align: left;
-    border-bottom: 3px #ED6D61 solid;
-    display:inline-block;
-    width: auto;
-    padding-left: 80px;
-    padding-right: 10px;
+.preguntas-frecuentes-main h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 10px;
+  text-align: left;
+  border-bottom: 3px #ed6d61 solid;
+  display: inline-block;
+  width: auto;
+  padding-left: 80px;
+  padding-right: 10px;
 }
 
-.preguntas-frecuentes-main h3{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 32px;
-    padding-left: 80px;
-    padding-right: 10px;
-    color: #357BA7;
-    margin-bottom: 25px;
+.preguntas-frecuentes-main h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  padding-left: 80px;
+  padding-right: 10px;
+  color: #357ba7;
+  margin-bottom: 25px;
 }
 
-.preguntas-frecuentes-main p{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.15px;
-    color: #754D2B;
-    padding-left: 80px;
-    padding-right: 120px;
-    margin-bottom: 50px;
+.preguntas-frecuentes-main p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
+  color: #754d2b;
+  padding-left: 80px;
+  padding-right: 120px;
+  margin-bottom: 50px;
 }
 
 /*Fin de preguntas frecuentes*/
 
-
-
 /*Inicio Talles*/
-.tallas-main{
-    margin-top: 140px;
+.tallas-main {
+  margin-top: 140px;
 }
 
-.tallas-main h1{
-font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 500;
-font-size: 49px;
-line-height: 65px;
-margin-bottom: 50px;
+.tallas-main h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 49px;
+  line-height: 65px;
+  margin-bottom: 50px;
 }
-.talles-contenedor{
-    text-align: center;
-    margin-bottom: 64px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.talles-contenedor .img-desktop{
-    width: 80%;
+.talles-contenedor {
+  text-align: center;
+  margin-bottom: 64px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.talles-contenedor .img-responsive{
-    display: none;
+.talles-contenedor .img-desktop {
+  width: 80%;
 }
 
-.tallas-main .descripcion-contenedor{
-    padding: 0 120px;
-    padding-top: 84px;
-    background-image: url("../imagenes/talles/fondo.png");
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.talles-contenedor .img-responsive {
+  display: none;
 }
 
-.tallas-main .descripcion-contenedor p{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 32px;
-    text-align: center;
-    letter-spacing: 0.15px;
-    color: #754D2B;
+.tallas-main .descripcion-contenedor {
+  padding: 0 120px;
+  padding-top: 84px;
+  background-image: url("../imagenes/talles/fondo.png");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.descripcion-contenedor .como-tomar-medidas-contenedor{
-    margin-bottom: 75px;
+.tallas-main .descripcion-contenedor p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #754d2b;
 }
 
-.partes-medidas-contenedor{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.descripcion-contenedor .como-tomar-medidas-contenedor {
+  margin-bottom: 75px;
 }
 
-.partes-medidas-contenedor .texto{
-    grid-column: 1/2;
+.partes-medidas-contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.partes-medidas-contenedor .texto h3{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 32px;
-    letter-spacing: 0.15px;
-    text-align: left;
-    color: #357BA7;
-    margin-bottom: 22px;
+.partes-medidas-contenedor .texto {
+  grid-column: 1/2;
 }
 
-.partes-medidas-contenedor .texto p{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.15px;
-    color: #754D2B;
-    text-align: left;
-    margin-bottom: 86px;
+.partes-medidas-contenedor .texto h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  text-align: left;
+  color: #357ba7;
+  margin-bottom: 22px;
 }
 
-.partes-medidas-contenedor .modelo-contenedor{
-    grid-column: 2/3;
-    
+.partes-medidas-contenedor .texto p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #754d2b;
+  text-align: left;
+  margin-bottom: 86px;
+}
+
+.partes-medidas-contenedor .modelo-contenedor {
+  grid-column: 2/3;
 }
 
 /*Fin Talles*/
 
-
-
-
 /*Inicio del Footer*/
-footer{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F3E4D5;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3e4d5;
 }
 
-footer h3{
-    font-size: 26px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: #754D2B;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-}
-hr{
-   width: 50%;
-   height: 5px;
-   background-color: #ed6d61;
-   border: none;
-   border-radius: 50px;
-   
-}
-footer .footer-contenedor-contenido p{
-    color: #754D2B;
-    font-size: 16px;
-    margin-left: 20px;
-    font-weight: 400;
-    
-}
-footer .footer-col-1 p{
-    margin: 0;
-    margin-bottom: 40px;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
+footer .footer-col-1 a{
+  color: #754d2b;
+  text-decoration: none;
+  text-align: left;
 }
 
-
-footer .footer-contenedor-contenido{
-    padding: 45px 80px;
-    height: auto;
-    display: flex;
-    /* PROVISORIO CONE */
-    flex-direction: column;
-    /* FIN PROVISORIO CONE */
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    background-color: #F3E4D5;
-    
-
-}
-footer .contenedor-datos-contacto{
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    margin-top: 10px; 
+footer .footer-col-1{
+  display: flex;
+  flex-direction: column;
 }
 
-footer .footer-col-3{
-    text-align: center;
+footer h3 {
+  font-size: 26px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #754d2b;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+}
+hr {
+  width: 50%;
+  height: 5px;
+  background-color: #ed6d61;
+  border: none;
+  border-radius: 50px;
+}
+footer .footer-contenedor-contenido p {
+  color: #754d2b;
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 0;
+  font-weight: 500;
+}
+footer .footer-contenedor-contenido p {
+  color: #754d2b;
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+footer .footer-col-1 p {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  
+}
+
+footer .footer-contenedor-contenido {
+  padding: 45px 80px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #f3e4d5;
+}
+footer .contenedor-datos-contacto {
+  display: flex;
+ 
+  justify-content: center;
+  margin-top: 10px;
+}
+
+footer .footer-col-3 {
+  text-align: center;
 }
 
 /*Fin del Footer*/
-
-
-
 
 /*Responsive*/
 /*Responsive*/
 /*Responsive*/
 @media only screen and (max-width: 768px) {
-/*Inicio Como comprar*/
-    /*Fin elementos generales*/
+  /*Inicio Como comprar*/
+  /*Fin elementos generales*/
 
-    footer .footer-contenedor-contenido{
-        flex-direction: column;
-        padding: 20px;
-        align-items: center;
-        text-align: center;
-    }
+  footer .footer-contenedor-contenido {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
 
-    footer  h3{
-        margin-bottom: 15px;
-    }
+  footer h3 {
+    margin-bottom: 15px;
+  }
+  footer .footer-col-1 {
+    align-items: center;
+    margin: auto;
+  }
 
-    footer .footer-col-1 p{
-        margin-bottom: 15px;
-    }
+  footer .footer-col-1 p {
+    margin-bottom: 15px;
+  }
 
-    footer .footer-col-2{
-        margin: 40px 0 60px 0;
-    }
+  footer .footer-col-2 {
+    margin: 40px 0 60px 0;
+  }
 
-    /*Fin elementos generales*/
+  /*Fin elementos generales*/
+
+  .como-comprar-main .pasos-comprar-contanedor {
+    width: 60%;
+  }
+
+  .como-comprar-main .listos-contenedor {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .como-comprar-main .listos-contenedor h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .como-comprar-main .saber-mas-contenedor h3 {
+    margin-bottom: 30px;
+  }
+  /*Fin Como comprar*/
+
+  /*Inicio Talles*/
+  .tallas-main .talles-contenedor .img-desktop {
+    width: 95%;
+  }
+  .tallas-main .como-tomar-medidas-contenedor {
+    width: 90%;
+    margin: auto;
+  }
+
+  .tallas-main .como-tomar-medidas-contenedor h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  .tallas-main .como-tomar-medidas-contenedor p {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+
+  .tallas-main .descripcion-contenedor {
+    padding: 0;
+  }
+  .partes-medidas-contenedor {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+  }
+
+  .partes-medidas-contenedor .texto {
+    grid-column: 1/2;
+  }
+
+  .partes-medidas-contenedor .texto h3,
+  .partes-medidas-contenedor .texto p {
+    text-align: center;
+  }
+
+  .partes-medidas-contenedor .modelo-contenedor {
+    grid-column: 1/2;
+  }
+
+  .partes-medidas-contenedor .modelo-contenedor img {
+    height: 70%;
+  }
+
+  /*Fin Talles*/
 
 
-    .como-comprar-main .pasos-comprar-contanedor{
-        width: 60%;
-    }
-    
-    .como-comprar-main .listos-contenedor
-    {
-        text-align: center;
-        margin-bottom: 50px;
-        
-    }
-
-    .como-comprar-main .listos-contenedor h2
-    {
-        font-size: 45px;
-        margin-bottom: 25px;
-        text-align: center;
-        
-    }
+  .preguntas-frecuentes-main p{
+    padding-right: 30px;
+  }
 
 
-    .como-comprar-main .saber-mas-contenedor h3{
-        margin-bottom: 30px;
-
-    }
-    /*Fin Como comprar*/
-
-        /*Inicio Talles*/
-        .tallas-main .talles-contenedor .img-desktop{
-            width: 95%;
-        }
-        .tallas-main .como-tomar-medidas-contenedor{
-            width: 90%;
-            margin: auto;
-        }
-    
-        .tallas-main .como-tomar-medidas-contenedor h2{
-            font-size: 35px;
-            margin-bottom: 25px;
-        }
-    
-        .tallas-main .como-tomar-medidas-contenedor p{
-            font-size: 22px;
-            margin-bottom: 60px;
-        }
-    
-        .tallas-main .descripcion-contenedor{
-            padding:0;
-    
-    
-        }
-        .partes-medidas-contenedor{
-            grid-template-columns: 1fr;
-            width: 90%;
-            margin: auto;
-            
-        }
-    
-        .partes-medidas-contenedor .texto{
-            grid-column: 1/2;
-            
-        }
-    
-        .partes-medidas-contenedor .texto h3, .partes-medidas-contenedor .texto p{
-            text-align: center;
-            
-        }
-    
-        .partes-medidas-contenedor .modelo-contenedor{
-            grid-column: 1/2;
-        }
-    
-        .partes-medidas-contenedor .modelo-contenedor img{
-            height: 70%;
-        }
-    
-        /*Fin Talles*/
 }
 
-
-
-
 @media only screen and (max-width: 480px) {
-    /*Inicio de elementos Generales*/
+  /*Inicio de elementos Generales*/
 
-    header .navegacion{
-        flex-direction: column;
-    }
-
-    header .contenedor-navegacion{
-        flex-direction: column;
-    }
-    
-    footer .footer-contenedor-contenido{
-        flex-direction: column;
-        padding: 20px;
-        align-items: center;
-        text-align: center;
-    }
-
-    footer  h3{
-        margin-bottom: 15px;
-    }
-
-    footer .footer-col-1 p{
-        margin-bottom: 15px;
-    }
-
-    footer .footer-col-2{
-        margin: 40px 0 60px 0;
-    }
-
-
-    /*Fin de elementos generales*/
-
-
-
-    /*Inicio Universo Canalas*/
-    .universo-canales-main h1{
-        margin-bottom: 20px;
-    }
-
-
-
-    .descripcion-canalas-contenedor, .historia-contenedor{
-        width: 90%;
-    }
-
-    .descripcion-canalas-contenedor p, .historia-contenedor p{
-        font-size: 22px;
-    }
-
-    .descripcion-canalas-contenedor{
-        margin-bottom: 40px;
-    }
-    /*Fin Universo Canalas*/
-
-
-
-    /*Inicio Como comprar*/
-    .como-comprar-main .pasos-comprar-contanedor{
-        width: 90%;
-        margin-top: 35px;
-        
-    }
-
-    .como-comprar-main h1{
-        text-align: center;
-        font-size: 45px;
-        
-    }
-    .como-comprar-main .pasos-comprar-contanedor p{
-        font-size: 17px;
-        
-    }
-
-    .como-comprar-main .listos-contenedor
-    {
-        text-align: center;
-        margin-bottom: 50px;
-        width: 90%;
-        
-        
-    }
-
-    .como-comprar-main .listos-contenedor h2
-    {
-        font-size: 45px;
-        margin-bottom: 25px;
-        text-align: center;
-        
-    }
-
-    .como-comprar-main .saber-mas-contenedor h3{
-        margin-bottom: 30px;
-
-    }
-
-    .como-comprar-main .saber-mas-contenedor p{
-        margin-bottom: 30px;
-
-    }
-    /*Fin Como comprar*/
-
-    /*Inicio Talles*/
-    .tallas-main .talles-contenedor .img-desktop{
-        display: none;
-    }
-
-    .talles-contenedor .img-responsive{
-        display: block;
-        width: 80%;
-    }
-    .tallas-main .como-tomar-medidas-contenedor{
-        width: 90%;
-        margin: auto;
-    }
-
-    .tallas-main .como-tomar-medidas-contenedor h2{
-        font-size: 35px;
-        margin-bottom: 25px;
-    }
-
-    .tallas-main .como-tomar-medidas-contenedor p{
-        font-size: 22px;
-        margin-bottom: 60px;
-    }
-
-    .tallas-main .descripcion-contenedor{
-        padding:0;
-
-
-    }
-    .partes-medidas-contenedor{
-        grid-template-columns: 1fr;
-        width: 90%;
-        margin: auto;
-        
-    }
-
-    .partes-medidas-contenedor .texto{
-        grid-column: 1/2;
-        
-    }
-
-    .partes-medidas-contenedor .texto h3, .partes-medidas-contenedor .texto p{
-        text-align: center;
-        
-    }
-
-    .partes-medidas-contenedor .modelo-contenedor{
-        grid-column: 1/2;
-    }
-
-    .partes-medidas-contenedor .modelo-contenedor img{
-        height: 70%;
-    }
-
-    /*Fin Talles*/
-
-
-
+  header .navegacion {
+    flex-direction: column;
   }
+
+  header .contenedor-navegacion {
+    flex-direction: column;
+  }
+
+  footer .footer-contenedor-contenido {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer h3 {
+    margin-bottom: 15px;
+  }
+
+  footer .footer-col-1 p {
+    margin-bottom: 15px;
+  }
+
+  footer .footer-col-2 {
+    margin: 40px 0 60px 0;
+  }
+
+  /*Fin de elementos generales*/
+
+  /*Inicio Universo Canalas*/
+  .universo-canales-main h1 {
+    margin-bottom: 20px;
+  }
+
+  .descripcion-canalas-contenedor,
+  .historia-contenedor {
+    width: 90%;
+  }
+
+  .descripcion-canalas-contenedor p,
+  .historia-contenedor p {
+    font-size: 22px;
+  }
+
+  .descripcion-canalas-contenedor {
+    margin-bottom: 40px;
+  }
+  /*Fin Universo Canalas*/
+
+  /*Inicio Como comprar*/
+  .como-comprar-main .pasos-comprar-contanedor {
+    width: 90%;
+    margin-top: 35px;
+  }
+
+  .como-comprar-main h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .como-comprar-main .pasos-comprar-contanedor p {
+    font-size: 17px;
+  }
+
+  .como-comprar-main .listos-contenedor {
+    text-align: center;
+    margin-bottom: 50px;
+    width: 90%;
+  }
+
+  .como-comprar-main .listos-contenedor h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .como-comprar-main .saber-mas-contenedor h3 {
+    margin-bottom: 30px;
+  }
+
+  .como-comprar-main .saber-mas-contenedor p {
+    margin-bottom: 30px;
+  }
+  /*Fin Como comprar*/
+
+  /*Inicio Talles*/
+  .tallas-main .talles-contenedor .img-desktop {
+    display: none;
+  }
+
+  .talles-contenedor .img-responsive {
+    display: block;
+    width: 80%;
+  }
+  .tallas-main .como-tomar-medidas-contenedor {
+    width: 90%;
+    margin: auto;
+  }
+
+  .tallas-main .como-tomar-medidas-contenedor h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  .tallas-main .como-tomar-medidas-contenedor p {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+
+  .tallas-main .descripcion-contenedor {
+    padding: 0;
+  }
+  .partes-medidas-contenedor {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+  }
+
+  .partes-medidas-contenedor .texto {
+    grid-column: 1/2;
+  }
+
+  .partes-medidas-contenedor .texto h3,
+  .partes-medidas-contenedor .texto p {
+    text-align: center;
+  }
+
+  .partes-medidas-contenedor .modelo-contenedor {
+    grid-column: 1/2;
+  }
+
+  .partes-medidas-contenedor .modelo-contenedor img {
+    height: 70%;
+  }
+
+  /*Fin Talles*/
+}
